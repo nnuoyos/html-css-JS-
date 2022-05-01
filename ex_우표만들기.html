@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우표만들기</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            margin: 0 auto;
+            background-color: antiquewhite;
+            border: 4px dotted gray;
+           
+        }
+        .day{
+            font-size: 100px;
+            text-align: center;
+            font-weight: 500;
+            position: relative;
+            transform: translate(10px,-100px);
+        }
+        .month{
+            font-size: 50px;
+            letter-spacing: 15px;
+            transform: translate(45px,-190px);
+        }
+        .year{
+            font-size: 27px;
+            transform: translate(80px, -230px) rotate(90deg)
+        }
+        .week{
+            text-align: center;
+            letter-spacing: 10px;
+            transform: translate(-90px, -420px) rotate(-90deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p class="day">06</p>
+        <p class="month">FEB</p>
+        <p class="year">2013</p>
+        <p class="week">wednesday</p>
+
+    </div>
+</body>
+</html>
