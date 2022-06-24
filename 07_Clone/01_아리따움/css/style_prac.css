@@ -1,111 +1,163 @@
-@charset "UTF-8";
-#wrap {
-    position: relative;
+@charset "utf-8";
+#wrap{
     width: 100%;
-    min-width: 1200px;
+    min-width: 1220px;
+    position: relative;
 }
 /* header */
-#header{
-    width: 100%;
-    height: auto;
-    top: 10px;
+.h_in{
     position: relative;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    width: 1200px;
+    height: 80px;
+    margin:  0 auto;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-.headerBox a{
-    margin: 30px;
+.logo a{
+    display: block;
+    width: 140px;
+    height: 20px;
 }
-.headerBox a img{
+/* header menu */
+.h_gnb{
     position: absolute;
-    top: 10px;
-    left: 150px;
+    top: 30px;
+    left: 230px;
 }
-.gnb ul{
-    position: absolute;
-    top: 10px;
-    left: 590px;
+.h_gnb ul{
     display: flex;
-    text-align: center;
-    justify-content: center;
 }
-.gnb li{
-    font-weight: 500;
+
+.h_gnb li{
+    margin-left: 50px;
+}
+
+.h_gnb li a{
+    color: #222;
+    font-size: 17px;
+}
+
+/* utill */
+.utill ul{
+    display: flex;
+}
+.utill li{
+    margin-left: 15px;
+}
+.utill li a{
+    color: #777;
+}
+.utill li a:hover{
     color: #222;
 }
-.userBox ul{
-    position: absolute;
-    top: 10px;
-    display: flex;
-    right: 200px;
-}
-.userBox li{
-    
-    color: #222;
-}
-.userBox li:hover{
-    color: #666;
-}
-/* main */
-/* slide */
-#main{
-    position: relative;
-    width: 1600px;
-    height: 480px;
-    top: 90px;
-    /* margin-bottom: 40px; */
-    margin-left: 150px;
-}
-.main .slide img{
-    top: 70px;
-    margin-bottom: 30px;
-    background-position: center;
-    justify-content: center;
-}
-.search{
+.utill .u_search a{
+    display: block;
+    width: 30px;
+    height: 20px;
     background-image: url(../img/icon_search.png);
     background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -999999px;
 }
-.cart{
+.utill .u_cart a{
+    display: block;
+    width: 30px;
+    height: 20px;
     background-image: url(../img/icon_cart.png);
     background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -999999px;
 }
-/* newSeason */
-.newSeason{
-    width: 1200px;
+/* main */
+.main_slide{
     position: relative;
-    margin: 0 auto;
-    margin-bottom: 40px;
-    /* position: absolute; */
+    height: 500px;
 }
-.newSeason ul{
-    /* position: absolute; */
+.main_slide a{
+    position: absolute;
+    left: 50%;
+    margin-left: -800px;
+    /* top: 0; */
+    /* margin-left: 30px; */
+}
+/* new_season */
+.new_season{
+    position: relative;
+    width: 1200px;
+    height: 80px;
+    top: 40px;
+    margin-bottom: 30px;
+    margin:  0 auto;
+}
+.new_season ul{
+    position: relative;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    
 }
-/* bestItem */
-.bestItem{
+/* best */
+.best{
+    position: relative;
+    width: 1200px;
+    height: 60px;
+    top: 200px;
+    margin:  0 auto;
+    align-items: center;
+}
+.best_text{
+    position: absolute;
+    margin-bottom: 20px;
+}
+.best ul{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    display: flex;
+}
+.best li p{
+    text-align: center;
+}
+.itemImg .photo img{
+    width: 95%;
     margin: 0 auto;
+    border: 1px solid #999;
+    margin-bottom: 16px;
+}
+.b_name{
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.item_name{
+    font-weight: 400;
+    font-size: 17px;
+    color: #555;
+    margin-bottom: 20px;
+}
+.price{
+    /* position: absolute; */
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+}
+.price img{
+    margin-top: 7px;
 }
 .more{
     position: absolute;
-    right: 5px;
+    right: 14px;
+    color: #777;
+    margin-top: 5px;
 }
-.bestItem ul{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-}
-.bestItem li img{
-    
-    text-align: center;
-    border: 1px solid #999;
-    justify-content: space-between;
-}
-.price img{
-    left: 5px;
-    bottom: 5px;
-}
+
+/* .more::after{
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-left: 1px solid #999;
+    border-top: 1px solid #999;
+    transform: rotate(45deg);
+    margin-left: 5px;
+} */
