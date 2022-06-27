@@ -411,7 +411,7 @@
     background-repeat: no-repeat;
     background-position: center 23px;
 }
-/* 채팅상담 */
+/* 사이드.채팅상담 */
 .btn_recent {
     border-bottom: 1px solid #ddd;
     background-color: #f3f3f3;
@@ -436,7 +436,7 @@
     border-bottom: 1px solid #999;
     transform: rotate(45deg);
 }
-/* 텍스트 옆 가상 화살표 */
+/* 최근본상품 옆 가상 화살표 */
 .btn_go_top a {
     display: block;
     font-size: 13px;
@@ -457,4 +457,168 @@
     border-bottom: 6px solid #4b4b4b;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
+}
+/* main 본문1 */
+.main1 {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background-color: #cfeffa;
+}
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+.main1 .inner {
+    display: flex;
+    justify-content: space-between;
+}
+/* search */
+.main_search {
+    width: 330px;
+    margin-top: 75px;
+}
+.main_search .ment {
+    /* 이정도의 타이틀은 h1, h2사용해도 된다 */
+    font-size: 26px;
+    line-height: 1.3em;
+    color: #111;
+}
+.ms_tabs {
+    margin-top: 30px;
+}
+/* 패키지 항공 호텔 tab */
+.ms_tabs_btn ul {
+    display: flex;
+}
+.ms_tabs_btn li {
+    width: 110px;
+    border-bottom: 1px solid #333;
+}
+.ms_tabs_btn li a {
+    display: block;
+    padding-top: 3px;
+    padding-bottom: 7px;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.6;
+    color: #111;
+}
+.ms_tabs_btn .on a {
+    border-bottom: 3px solid #333;
+    font-weight: 700;
+    opacity: 1;
+}
+/* pannel */
+.ms_tabs_pannel {
+    margin-top: 24px;
+}
+.ms_tabs_pannel legend {
+    display: none;
+}
+.tab_line2,
+.tab_line3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+}
+.tab_line4 {
+    margin-top: 30px;
+}
+.ms_tabs_pannel input:focus {
+    outline: transparent;
+    border-color: #5e2bb8;
+    /* :focus => 서치창에 테두리 강조 */
+}
+/* 첫번째 input박스 어디로 떠나세요? */
+.tabs_input_txt_01 {
+    width: 298px;
+    height: 50px;
+    padding: 0 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 17px;
+}
+/* 인천/김포 출발 - 여행시작일 */
+.tabs_input_txt_02,
+.tabs_input_txt_03 {
+    position: relative;
+}
+.tabs_input_txt_02 input,
+.tabs_input_txt_03 input {
+    width: 108px;
+    height: 41px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 0 15px 0 36px;
+    background-color: #fff;
+    color: #333;
+}
+.tabs_input_txt_02 input::placeholder,
+.tabs_input_txt_03 input::placeholder {
+    color: #333;
+}
+
+/* 가상태그로 아이콘 넣기 */
+.tabs_input_txt_02::after,
+.tabs_input_txt_03::after {
+    position: absolute;
+    top: 15px;
+    left: 17px;
+    content: '';
+    display: block;
+    width: 12px;
+    height: 14px;
+    background-image: url(../img/spr_icn.png);
+}
+/* 아이콘 모아져있는 한장의 이미지를 위치조정해서 사용한다 */
+.tabs_input_txt_02::after {
+    background-position: -136px 0;
+}
+.tabs_input_txt_03::after {
+    background-position: -155px 0;
+}
+.tabs_btn_01,
+.tabs_btn_02 {
+    position: relative;
+    opacity: 0.6;
+}
+/* 항공권은 있어요, 우리끼리여행할게요 */
+.tabs_btn_01 button,
+.tabs_btn_02 button {
+    width: 161px;
+    height: 58px;
+    padding-left: 75px;
+    border: 1px solid #111;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 13px;
+    line-height: 17px;
+    color: #111;
+}
+.tabs_btn_01::after,
+.tabs_btn_02::after {
+    position: absolute;
+    top: 18px;
+    left: 19px;
+    content: '';
+    display: block;
+    width: 40px;
+    height: 24px;
+    background-image: url(../img/spr_man.png);
+}
+.tabs_btn_01::after {
+    background-position: 0 -26px;
+}
+.tabs_btn_02::after {
+    background-position: -42px -26px;
+}
+/* submit */
+.tabs_submit {
+    width: 330px;
+    height: 56px;
+    border-radius: 5px;
+    background-color: #333;
+    font-size: 17px;
+    color: #fff;
 }
