@@ -35,7 +35,7 @@
     position: relative;
     border-bottom: 1px solid #141416;
 }
-#header ::before {
+#header::before {
     position: absolute;
     top: 110px;
     left: 0;
