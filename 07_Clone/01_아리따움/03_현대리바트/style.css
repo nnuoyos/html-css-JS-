@@ -4,10 +4,112 @@
     width: 100%;
     min-width: 1220px;
 }
+/* header */
 .header_in {
-    position: absolute;
-}
-.header_in ul {
+    position: relative;
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    margin-bottom: 5px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+}
+.logo a{
+    position: absolute;
+    display: block;
+    top: 20px;
+}
+.gnb{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.utill{
+    position: absolute;
+    margin-top: 5px;
+    right: 0px;
+}
+.gnb ul{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.gnb li{
+    margin-left: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #232323;
+}
+.gnb li a:hover{
+    color: rgb(0, 153, 129);
+}
+.gnb .search a{
+    display: block;
+    width: 26px;
+    height: 26px;
+    margin-left: 9px;
+    background-image: url(./img/icon_sc.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -99999999px;
+
+}
+.utill ul{
+    display: flex;
+    align-items: center;
+}
+.utill li{
+    margin-left: 12px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    color: #888;
+}
+.utill li a:hover{
+    color: #121212;
+}
+/* main slide */
+.mainSlide{
+    position: relative;
+    min-width: 1240px;
+}
+.sImg{
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+.img_box{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    top: 5px;
+}
+.img_box a{
+    position: absolute;
+    display: block;
+}
+
+
+/* prev - next btn */
+.mainSlide .prev_btn, .mainSlide .next_btn{
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 275px;
+    cursor: pointer;
+}
+.prev_btn{
+    background-image: url(./img/a_left.png);
+    left: 360px;
+    
+}
+.next_btn{
+    background-image: url(./img/a_right.png);
+    right: 360px;   
+}
+.prev_btn span, .next_btn span{
+    display: block;
+    width: 64px;
+    height: 64px;
+    text-indent: -999999px;
 }
