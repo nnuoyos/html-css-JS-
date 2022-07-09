@@ -113,3 +113,43 @@
     height: 64px;
     text-indent: -999999px;
 }
+/* Brand Intro */
+
+.intro{
+    position: relative;
+    width: 1220px;
+    height: 300px;
+    margin: 0 auto;
+    top: 35px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+.intro h2{
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+.listFirst{
+    width: 230px;
+    height: 172px;
+    border: 1px solid #ddd;
+}
+.brandList ul{
+    position: absolute;
+    display: flex;
+    margin-left: 235px;
+    justify-content: flex-end;
+}
+.brandList li{
+    border: 1px solid #ddd;
+    margin-left: 9px;
+    margin-bottom: 9px;
+}
+.listTop{
+    top: 50px;
+}
+.listBt{
+    top: 142px
+}
