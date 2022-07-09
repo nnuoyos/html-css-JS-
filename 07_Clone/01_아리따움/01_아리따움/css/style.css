@@ -100,6 +100,7 @@
     margin-bottom: 50px;
 }
 .event ul {
+    position: relative;
     display: flex;
     justify-content: space-between;
 }
@@ -143,6 +144,7 @@
     font-size: 17px;
     color: #555;
     height: 55px;
+    margin-bottom: 20px;
 }
 .best .price {
     font-size: 18px;
@@ -156,6 +158,7 @@
 .best .more {
     position: absolute;
     top: 0;
+    
     right: 0;
 }
 .best .more a {
